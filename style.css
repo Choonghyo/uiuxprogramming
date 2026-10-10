@@ -164,6 +164,25 @@ button:active{
     transform: translateY(1px);
 }
 
+#subscribeMessage{
+    margin-top: 16px;
+    color: #555763;
+}
+
+#subscribeMessage.is-success{
+    color:#245c3a;
+    background-color: #e7f7ed;
+    padding:12px;
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+#subscribeButton:disabled{
+    color: #ffffff;
+    background-color: #a8a8b2;
+    cursor: not-allowed;
+}
+
 /*웹페이지가 표시되는 가로폭이 768px 이하일때만 적용*/
 @media (max-width: 768px){
     body{
@@ -202,6 +221,7 @@ button:active{
     .features-list{
         grid-template-columns: 1fr;
     }
+    
 
     /*이메일 입력창과 버튼도 한 일로 배치*/
     form{
@@ -217,5 +237,6 @@ button:active{
     button{
         min-height: 48px;
     }
+
 
 }
